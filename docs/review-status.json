@@ -1,0 +1,50 @@
+{
+  "chapters/09_zavershenie/09-01_kontrolnoe-chtenie.md": {
+    "history": [
+      {
+        "date": "2026-05-28",
+        "model": "deepseek-v4-pro",
+        "file": "reviews/09_zavershenie/09-01_kontrolnoe-chtenie.deepseek-v4-pro.2026-05-28.md"
+      },
+      {
+        "date": "2026-05-28",
+        "model": "gpt-4.1-2025-04-14",
+        "file": "reviews/09_zavershenie/09-01_kontrolnoe-chtenie.gpt-41-2025-04-14.2026-05-28.md"
+      }
+    ],
+    "last_reviewed": "2026-05-28",
+    "last_model": "gpt-4.1-2025-04-14"
+  },
+  "chapters/09_zavershenie/09-03_kuda-idti-dalshe.md": {
+    "history": [
+      {
+        "date": "2026-05-28",
+        "model": "deepseek-v4-pro",
+        "file": "reviews/09_zavershenie/09-03_kuda-idti-dalshe.deepseek-v4-pro.2026-05-28.md"
+      },
+      {
+        "date": "2026-05-28",
+        "model": "gpt-4.1-2025-04-14",
+        "file": "reviews/09_zavershenie/09-03_kuda-idti-dalshe.gpt-41-2025-04-14.2026-05-28.md"
+      }
+    ],
+    "last_reviewed": "2026-05-28",
+    "last_model": "gpt-4.1-2025-04-14"
+  },
+  "chapters/09_zavershenie/09-02_kontrolnoe-proektirovanie.md": {
+    "history": [
+      {
+        "date": "2026-05-28",
+        "model": "deepseek-v4-pro",
+        "file": "reviews/09_zavershenie/09-02_kontrolnoe-proektirovanie.deepseek-v4-pro.2026-05-28.md"
+      },
+      {
+        "date": "2026-05-28",
+        "model": "gpt-4.1-2025-04-14",
+        "file": "reviews/09_zavershenie/09-02_kontrolnoe-proektirovanie.gpt-41-2025-04-14.2026-05-28.md"
+      }
+    ],
+    "last_reviewed": "2026-05-28",
+    "last_model": "gpt-4.1-2025-04-14"
+  }
+}
