@@ -1,8 +1,74 @@
----
-title: 'Дерево метаданных 1С: как читать и понимать'
-author: 'Мирошниченко Александр (aka iMiron)'
-lang: ru
-cover-image: assets/img/cover.png
-toc-depth: 2
-pdf-papersize: a5
-...
+# ─────────────────────────────────────────────
+#  ИДЕНТИФИКАЦИЯ КНИГИ
+# ─────────────────────────────────────────────
+title: "Дерево метаданных 1С"
+subtitle: "Как читать и понимать"
+author: "Мирошниченко Александр (aka iMiron)"
+author_url: "https://github.com/iMironRU"
+language: ru                  # ru | en
+license: "CC BY 4.0"
+
+# Версия книги (SemVer: MAJOR.MINOR.PATCH)
+# MAJOR — структурная реорганизация, смена концепции
+# MINOR — новые главы или значительная переработка
+# PATCH — исправления, уточнения, опечатки
+version: "1.0.0"
+
+# ─────────────────────────────────────────────
+#  ОТСЛЕЖИВАНИЕ ШАБЛОНА
+# ─────────────────────────────────────────────
+template_repo: "https://github.com/iMironRU/book-template"
+template_version: "v0.2.1"
+
+# ─────────────────────────────────────────────
+#  ФОРМАТЫ ВЫПУСКА
+# ─────────────────────────────────────────────
+formats:
+  epub:       true    # EPUB для читалок
+  fb2:        true    # FB2 для читалок
+  pdf_a5:     true    # PDF формат A5 (основной для чтения)
+  pdf_a4:     false   # PDF формат A4 (для печати)
+  html:       true    # HTML — один самодостаточный файл
+  docx:       true    # DOCX стандарт
+  docx_a4:    false   # DOCX A4 с полями под печать
+  site:       true    # Сайт на GitHub Pages (mdBook)
+
+# Фильтр статуса для сборки:
+#   ready   — только главы со статусом ready
+#   review  — ready + review
+#   all     — все главы, черновики помечаются баннером
+release_filter: "review"
+nightly_filter: "all"
+
+# ─────────────────────────────────────────────
+#  ДОПОЛНИТЕЛЬНЫЕ АРТЕФАКТЫ В РЕЛИЗ
+# ─────────────────────────────────────────────
+artifacts: []
+# - type: zip
+#   source: "code/"
+#   name: "code-examples"
+# - type: file
+#   source: "configuration/releases/book.cf"
+#   name: "demo"
+
+# ─────────────────────────────────────────────
+#  САЙТ (GitHub Pages)
+# ─────────────────────────────────────────────
+site_url: "https://imiron.ru/1c-metadata-tree-book/"
+
+# ─────────────────────────────────────────────
+#  НОЧНЫЕ СБОРКИ
+# ─────────────────────────────────────────────
+nightly:
+  enabled: true
+  branch: "main"
+
+# ─────────────────────────────────────────────
+#  PDF — ПАРАМЕТРЫ СТРАНИЦЫ
+# ─────────────────────────────────────────────
+pdf:
+  font_main: "PT Serif"
+  font_mono: "JetBrains Mono"
+  font_size: "11pt"
+  margin_a5: "top=20mm,right=15mm,bottom=20mm,left=20mm"
+  margin_a4: "top=25mm,right=20mm,bottom=25mm,left=25mm"
