@@ -9,7 +9,7 @@
 - [§ 0.3. Первый запуск Конфигуратора](chapters/00_vvedenie/00-03_pervyy-zapusk.md)
 - [§ 0.4. Что хранится и что делает: два разных слоя](chapters/00_vvedenie/00-04_chto-hranitsya-i-chto-delaet.md)
 - [§ 0.5. Фирма «Канцтовары»: что мы хотим автоматизировать](chapters/00_vvedenie/00-05_firma-kantctovary.md)
-- [Итог Модуля 0](chapters/00_vvedenie/00-06_itog.md)
+- [§ 0.6. Итог модуля 0](chapters/00_vvedenie/00-06_itog.md)
 
 ## Модуль 1. Существительные — справочники
 
@@ -20,7 +20,7 @@
 - [§ 1.5. Зачем нужна структура: каждая сущность живёт ровно в одном месте](chapters/01_spravochniki/01-05_zachem-nuzhna-struktura.md)
 - [§ 1.6. Чтение справочника: перевести на бизнес-язык](chapters/01_spravochniki/01-06_chtenie-spravochnika.md)
 - [§ 1.7. Создаём справочник «Товары»: объект и тип одновременно](chapters/01_spravochniki/01-07_sozdayom-spravochnik.md)
-- [Итог Модуля 1](chapters/01_spravochniki/01-08_itog.md)
+- [§ 1.8. Итог модуля 1](chapters/01_spravochniki/01-08_itog.md)
 
 ## Модуль 2. Глаголы — документы
 
@@ -32,7 +32,7 @@
 - [§ 2.6. Как работает ссылка: имя собственное](chapters/02_dokumenty/02-06_kak-rabotaet-ssylka.md)
 - [§ 2.7. Объект = тип: создав справочник, мы создали не только список](chapters/02_dokumenty/02-07_obekt-eto-tip.md)
 - [§ 2.8. Создаём документ «ПоступлениеТоваров» для «Канцтоваров»](chapters/02_dokumenty/02-08_sozdayom-dokument.md)
-- [Итог Модуля 2](chapters/02_dokumenty/02-09_itog.md)
+- [§ 2.9. Итог модуля 2](chapters/02_dokumenty/02-09_itog.md)
 
 ## Модуль 3. Таблицы фактов — регистры сведений
 
@@ -43,7 +43,7 @@
 - [§ 3.5. Регистр сведений подчинённый регистратору](chapters/03_registry-svedeniy/03-05_podchinennyy-registr.md)
 - [§ 3.6. Понятие регистратора: документ берёт ответственность](chapters/03_registry-svedeniy/03-06_ponyatie-registratora.md)
 - [§ 3.7. Создаём регистр «ЦеныТоваров» и документ «ПриказОбИзмененииЦен»](chapters/03_registry-svedeniy/03-07_sozdayom-registr.md)
-- [Итог Модуля 3](chapters/03_registry-svedeniy/03-08_itog.md)
+- [§ 3.8. Итог модуля 3](chapters/03_registry-svedeniy/03-08_itog.md)
 
 ## Модуль 4. Движения и итоги — регистры накопления
 
@@ -54,7 +54,7 @@
 - [§ 4.5. Документ-регистратор: кто пишет движения](chapters/04_registry-nakopleniya/04-05_registrator-nakopleniya.md)
 - [§ 4.6. Чтение регистра накопления](chapters/04_registry-nakopleniya/04-06_chtenie-registra.md)
 - [§ 4.7. Создаём регистр «ОстаткиТоваров» и справочник «Склады»](chapters/04_registry-nakopleniya/04-07_sozdayom-registr.md)
-- [Итог Модуля 4](chapters/04_registry-nakopleniya/04-08_itog.md)
+- [§ 4.8. Итог модуля 4](chapters/04_registry-nakopleniya/04-08_itog.md)
 
 ## Модуль 5. Вопросы и ответы — отчёты
 
@@ -62,7 +62,7 @@
 - [§ 5.2. Схема компоновки данных: как устроен отчёт внутри](chapters/05_otchety/05-02_skd-kak-ustroyen-otchet.md)
 - [§ 5.3. Отчёт на основе регистра: как данные становятся строками и колонками](chapters/05_otchety/05-03_otchet-na-osnove-registra.md)
 - [§ 5.4. Создаём отчёт «ОстаткиТоваровНаСкладе»](chapters/05_otchety/05-04_sozdayom-otchet.md)
-- [Итог Модуля 5](chapters/05_otchety/05-05_itog.md)
+- [§ 5.5. Итог модуля 5](chapters/05_otchety/05-05_itog.md)
 
 ## Модуль 6. Связи между объектами: читаем дерево целиком
 
@@ -71,7 +71,7 @@
 - [§ 6.3. Общие реквизиты: атрибуты, которые принадлежат всей конфигурации](chapters/06_svyazi/06-03_obshchie-rekvizity.md)
 - [§ 6.4. Как читать чужое дерево: три стратегии навигации](chapters/06_svyazi/06-04_kak-chitat-chuzhoe-derevo.md)
 - [§ 6.5. Итоговое упражнение: читаем «Канцтовары» вслух](chapters/06_svyazi/06-05_itogovoe-uprazhnenie.md)
-- [Итог Модуля 6](chapters/06_svyazi/06-06_itog.md)
+- [§ 6.6. Итог модуля 6](chapters/06_svyazi/06-06_itog.md)
 
 ## Модуль 7. Другие объекты дерева
 
@@ -82,7 +82,7 @@
 - [§ 7.5. Бизнес-процессы и задачи](chapters/07_drugie-obekty/07-05_biznes-processy.md)
 - [§ 7.6. Роли и безопасность](chapters/07_drugie-obekty/07-06_roli-i-bezopasnost.md)
 - [§ 7.7. Другие объекты дерева: константы, планы обмена, журналы документов, функциональные опции](chapters/07_drugie-obekty/07-07_drugie-obekty.md)
-- [Итог Модуля 7](chapters/07_drugie-obekty/07-08_itog.md)
+- [§ 7.8. Итог модуля 7](chapters/07_drugie-obekty/07-08_itog.md)
 
 ## Модуль 8. Как читать большое незнакомое дерево
 
@@ -93,11 +93,11 @@
 - [§ 8.5. Карта конфигурации: фиксируем то, что читаем](chapters/08_kak-chitat-bolshoe-derevo/08-05_karta.md)
 - [§ 8.6. «Шум» в реальных конфигурациях: как не принять мусор за архитектуру](chapters/08_kak-chitat-bolshoe-derevo/08-06_shum.md)
 - [§ 8.7. Что делать, если объект непонятен: алгоритм самодиагностики](chapters/08_kak-chitat-bolshoe-derevo/08-07_samodiagnostika.md)
-- [Итог Модуля 8](chapters/08_kak-chitat-bolshoe-derevo/08-08_itog.md)
+- [§ 8.8. Итог модуля 8](chapters/08_kak-chitat-bolshoe-derevo/08-08_itog.md)
 
 ## Модуль 9. Завершение: от чтения к созданию
 
 - [§ 9.1. Контрольное чтение: незнакомое дерево вслух](chapters/09_zavershenie/09-01_kontrolnoe-chtenie.md)
 - [§ 9.2. Контрольное проектирование: «ВелоПрокат»](chapters/09_zavershenie/09-02_kontrolnoe-proektirovanie.md)
 - [§ 9.3. Куда идти дальше](chapters/09_zavershenie/09-03_kuda-idti-dalshe.md)
-- [Итог. Конец курса](chapters/09_zavershenie/09-04_itog.md)
+- [§ 9.4. Итог: конец курса](chapters/09_zavershenie/09-04_itog.md)
