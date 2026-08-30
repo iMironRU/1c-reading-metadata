@@ -53,7 +53,7 @@
 - [§ 4.4. Остатки и обороты: два вида итогов](chapters/04_registry-nakopleniya/04-04_ostatki-i-oboroty.md)
 - [§ 4.5. Документ-регистратор: кто пишет движения](chapters/04_registry-nakopleniya/04-05_registrator-nakopleniya.md)
 - [§ 4.6. Чтение регистра накопления](chapters/04_registry-nakopleniya/04-06_chtenie-registra.md)
-- [§ 4.7. Создаём регистр «ОстаткиТоваров» и справочник «Склады»](chapters/04_registry-nakopleniya/04-07_sozdayom-registr.md)
+- [§ 4.7. Создаём регистр «ТоварыНаСкладах» и справочник «Склады»](chapters/04_registry-nakopleniya/04-07_sozdayom-registr.md)
 - [§ 4.8. Итог модуля 4](chapters/04_registry-nakopleniya/04-08_itog.md)
 
 ## Модуль 5. Вопросы и ответы — отчёты
