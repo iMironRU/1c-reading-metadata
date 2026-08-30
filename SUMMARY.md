@@ -36,7 +36,7 @@
 
 ## Модуль 3. Таблицы фактов — регистры сведений
 
-- [§ 3.1. Зачем нужны регистры: хранить то, что нельзя вычислить из документов](chapters/03_registry-svedeniy/03-01_zachem-nuzhny-registry.md)
+- [§ 3.1. Зачем нужны регистры: документы плохо отвечают на вопросы о состоянии](chapters/03_registry-svedeniy/03-01_zachem-nuzhny-registry.md)
 - [§ 3.2. Регистр сведений независимый: когда документ не нужен](chapters/03_registry-svedeniy/03-02_nezavisimyy-registr.md)
 - [§ 3.3. Измерения и ресурсы: таблица как «ключ → значение»](chapters/03_registry-svedeniy/03-03_izmerenya-i-resursy.md)
 - [§ 3.4. Периодичность: как часто меняется значение](chapters/03_registry-svedeniy/03-04_periodichnost.md)
