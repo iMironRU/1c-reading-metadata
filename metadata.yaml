@@ -19,7 +19,7 @@ version: "1.1.2"
 #  ОТСЛЕЖИВАНИЕ ШАБЛОНА
 # ─────────────────────────────────────────────
 template_repo: "https://github.com/iMironRU/book-template"
-template_version: "v0.7.0"
+template_version: "v0.7.1"
 
 # ─────────────────────────────────────────────
 #  ФОРМАТЫ ВЫПУСКА
