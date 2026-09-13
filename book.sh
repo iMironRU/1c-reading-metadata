@@ -433,7 +433,23 @@ print(m.group(1) if m else 'ready')
         local epub_css=()
         [[ -f assets/print/epub-base.css ]] && epub_css+=(--css=assets/print/epub-base.css)
         [[ -f assets/print/epub.css ]]      && epub_css+=(--css=assets/print/epub.css)
-        pandoc "${file_list[@]}" "${pandoc_flags[@]}" ${epub_css[@]+"${epub_css[@]}"} -o "${base}.epub"
+        # Оглавление в EPUB — дело читалки: nav.xhtml она показывает в своём
+        # меню. С --toc pandoc вдобавок вставляет его страницей в поток книги,
+        # и читатель листает содержание, прежде чем дойти до текста.
+        local epub_flags=()
+        local flag
+        for flag in "${pandoc_flags[@]}"; do
+            [[ "$flag" == "--toc" ]] || epub_flags+=("$flag")
+        done
+        # Титульная страница повторяет обложку: при обложке она лишняя.
+        [[ -f assets/img/cover.png ]] && epub_flags+=(--epub-title-page=false)
+        # Постоянный идентификатор: pandoc по умолчанию ставит случайный UUID, и
+        # читалка («Книги» на iPhone и другие) видит каждое обновление как новую
+        # книгу — рядом со старой. UUID из имени книги одинаков в каждой сборке.
+        local epub_id
+        epub_id=$(python3 -c "import uuid,sys; print(uuid.uuid5(uuid.NAMESPACE_URL, 'https://github.com/iMironRU/' + sys.argv[1]))" "$slug")
+        epub_flags+=(--metadata="identifier:urn:uuid:${epub_id}")
+        pandoc "${file_list[@]}" "${epub_flags[@]}" ${epub_css[@]+"${epub_css[@]}"} -o "${base}.epub"
         success "→ ${base}.epub"
     fi
 
@@ -639,6 +655,20 @@ PYSITE
     ( cd "$stage" && mdbook build )
     rm -rf "$stage"
     rm -f book/book.toml   # служебный конфиг стенда в выводе не нужен
+
+    # Поиск по книге собираем сами: родной поиск mdBook русского не видит —
+    # индекс строится английским конвейером, и кириллица отбрасывается.
+    if [[ -f scripts/search-index.py ]]; then
+        python3 scripts/search-index.py book metadata.yaml || \
+            warn "Поисковый индекс не собран"
+    fi
+
+    # Описание страницы, обложка и канонический адрес: mdBook оставляет
+    # описание пустым, и ссылка на книгу в мессенджере выглядит голым адресом.
+    if [[ -f scripts/site-meta.py ]]; then
+        python3 scripts/site-meta.py book metadata.yaml || \
+            warn "Мета-теги не дописаны"
+    fi
 }
 
 _generate_summary() {
@@ -1016,6 +1046,17 @@ cmd_lint() {
     python3 scripts/style-lint.py ${args[@]+"${args[@]}"}
 }
 
+# ─── SANDBOX-LINKS ───────────────────────────────────────────────────────────
+cmd_sandbox_links() {
+    if [[ ! -f scripts/sandbox-links.py ]]; then
+        error "scripts/sandbox-links.py не найден. Запустите: ./book.sh sync"
+        exit 1
+    fi
+    header "Ссылки в песочницу под исполнимыми запросами"
+    echo ""
+    python3 scripts/sandbox-links.py "$@"
+}
+
 # ─── TASKS ───────────────────────────────────────────────────────────────────
 cmd_tasks() {
     if [[ ! -d tasks ]]; then
@@ -1038,6 +1079,7 @@ show_help() {
     echo -e "    ${CYAN}build [фильтр]${RESET}    Собрать форматы (ready | review | all)"
     echo -e "    ${CYAN}lint [пути]${RESET}       Проверить стиль по канону (docs/style-guide.md)"
     echo -e "    ${CYAN}summary${RESET}           Перегенерировать SUMMARY.md"
+    echo -e "    ${CYAN}sandbox-links${RESET}     Обновить ссылки в песочницу под блоками «запрос,песочница»"
     echo -e "    ${CYAN}tasks${RESET}             Собрать tasks/*.yaml в tasks.json (задачи BSLexicon)"
     echo -e "    ${CYAN}release${RESET}           Выпустить версию (changelog + git tag)"
     echo -e "    ${CYAN}sync${RESET}              Проверить и применить обновления шаблона"
@@ -1086,6 +1128,7 @@ case "$COMMAND" in
     status)  cmd_status ;;
     build)   cmd_build "${1:-all}" ;;
     lint)    cmd_lint "$@" ;;
+    sandbox-links) cmd_sandbox_links "$@" ;;
     summary) check_metadata; _generate_summary "${1:-all}"; success "→ SUMMARY.md" ;;
     tasks)   check_metadata; cmd_tasks "$@" ;;
     release) cmd_release ;;

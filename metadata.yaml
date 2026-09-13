@@ -3,6 +3,7 @@
 # ─────────────────────────────────────────────
 title: "Дерево метаданных 1С"
 subtitle: "Как читать и понимать"
+series: "Линия «Чтение 1С» · книга вторая"
 author: "Мирошниченко Александр (aka iMiron)"
 author_url: "https://github.com/iMironRU"
 language: ru                  # ru | en
@@ -18,7 +19,7 @@ version: "1.1.2"
 #  ОТСЛЕЖИВАНИЕ ШАБЛОНА
 # ─────────────────────────────────────────────
 template_repo: "https://github.com/iMironRU/book-template"
-template_version: "v0.2.1"
+template_version: "v0.6.1"
 
 # ─────────────────────────────────────────────
 #  ФОРМАТЫ ВЫПУСКА
