@@ -2,7 +2,7 @@
 
 - [О книге](README.md)
 
-- [Модуль 0. Что такое дерево метаданных и как открыть Конфигуратор]()
+- [Глава 0. Что такое дерево метаданных и как открыть Конфигуратор]()
   - [§ 0.1. Метаданные — это не программа, а описание устройства](chapters/00_vvedenie/00-01_metadannye-eto-ne-programma.md)
   - [§ 0.2. Дерево как форма организации](chapters/00_vvedenie/00-02_derevo-kak-forma.md)
   - [§ 0.3. Первый запуск Конфигуратора](chapters/00_vvedenie/00-03_pervyy-zapusk.md)
@@ -11,7 +11,7 @@
   - [§ 0.6. Итог: с чего начинается дерево](chapters/00_vvedenie/00-06_itog.md)
   - [Ответы к части 0](chapters/00_vvedenie/00-99_otvety.md)
 
-- [Модуль 1. Существительные — справочники]()
+- [Глава 1. Существительные — справочники]()
   - [§ 1.1. Справочник как список чего-либо](chapters/01_spravochniki/01-01_spravochnik-kak-spisok.md)
   - [§ 1.2. Реквизиты — свойства элемента](chapters/01_spravochniki/01-02_rekvizity.md)
   - [§ 1.3. Иерархия в справочнике: группы и элементы](chapters/01_spravochniki/01-03_ierarhiya.md)
@@ -22,7 +22,7 @@
   - [§ 1.8. Итог: справочники](chapters/01_spravochniki/01-08_itog.md)
   - [Ответы к части 1](chapters/01_spravochniki/01-99_otvety.md)
 
-- [Модуль 2. Глаголы — документы]()
+- [Глава 2. Глаголы — документы]()
   - [§ 2.1. Документ как запись факта](chapters/02_dokumenty/02-01_dokument-kak-zapis-fakta.md)
   - [§ 2.2. Реквизиты документа: номер, дата, контрагент](chapters/02_dokumenty/02-02_rekvizity-dokumenta.md)
   - [§ 2.3. Табличная часть документа — список позиций](chapters/02_dokumenty/02-03_tablichnaya-chast.md)
@@ -34,7 +34,7 @@
   - [§ 2.9. Итог: документы](chapters/02_dokumenty/02-09_itog.md)
   - [Ответы к части 2](chapters/02_dokumenty/02-99_otvety.md)
 
-- [Модуль 3. Таблицы фактов — регистры сведений]()
+- [Глава 3. Таблицы фактов — регистры сведений]()
   - [§ 3.1. Зачем нужны регистры: документы плохо отвечают на вопросы о состоянии](chapters/03_registry-svedeniy/03-01_zachem-nuzhny-registry.md)
   - [§ 3.2. Регистр сведений независимый: когда документ не нужен](chapters/03_registry-svedeniy/03-02_nezavisimyy-registr.md)
   - [§ 3.3. Измерения и ресурсы: таблица как «ключ → значение»](chapters/03_registry-svedeniy/03-03_izmerenya-i-resursy.md)
@@ -45,7 +45,7 @@
   - [§ 3.8. Итог: регистры сведений](chapters/03_registry-svedeniy/03-08_itog.md)
   - [Ответы к части 3](chapters/03_registry-svedeniy/03-99_otvety.md)
 
-- [Модуль 4. Движения и итоги — регистры накопления]()
+- [Глава 4. Движения и итоги — регистры накопления]()
   - [§ 4.1. От сведений к накоплению: что меняется](chapters/04_registry-nakopleniya/04-01_ot-svedeniy-k-nakopleniyu.md)
   - [§ 4.2. Движение: приход и расход](chapters/04_registry-nakopleniya/04-02_dvizhenie-prihod-i-rashod.md)
   - [§ 4.3. Измерения и ресурсы в регистре накопления](chapters/04_registry-nakopleniya/04-03_izmerenya-i-resursy.md)
@@ -56,7 +56,7 @@
   - [§ 4.8. Итог: регистры накопления](chapters/04_registry-nakopleniya/04-08_itog.md)
   - [Ответы к части 4](chapters/04_registry-nakopleniya/04-99_otvety.md)
 
-- [Модуль 5. Вопросы и ответы — отчёты]()
+- [Глава 5. Вопросы и ответы — отчёты]()
   - [§ 5.1. Отчёт как ответ на бизнес-вопрос](chapters/05_otchety/05-01_otchet-kak-otvet.md)
   - [§ 5.2. Схема компоновки данных: как устроен отчёт внутри](chapters/05_otchety/05-02_skd-kak-ustroyen-otchet.md)
   - [§ 5.3. Отчёт на основе регистра: как данные становятся строками и колонками](chapters/05_otchety/05-03_otchet-na-osnove-registra.md)
@@ -64,7 +64,7 @@
   - [§ 5.5. Итог: отчёты](chapters/05_otchety/05-05_itog.md)
   - [Ответы к части 5](chapters/05_otchety/05-99_otvety.md)
 
-- [Модуль 6. Связи между объектами: читаем дерево целиком]()
+- [Глава 6. Связи между объектами: читаем дерево целиком]()
   - [§ 6.1. Подчинение справочника: как одни объекты принадлежат другим](chapters/06_svyazi/06-01_vladeletc-i-podchinenie.md)
   - [§ 6.2. Движения и регистраторы: смотрим с другой стороны](chapters/06_svyazi/06-02_dvizhenia-so-storony-registra.md)
   - [§ 6.3. Общие реквизиты: атрибуты, которые принадлежат всей конфигурации](chapters/06_svyazi/06-03_obshchie-rekvizity.md)
@@ -73,7 +73,7 @@
   - [§ 6.6. Итог: связи между объектами](chapters/06_svyazi/06-06_itog.md)
   - [Ответы к части 6](chapters/06_svyazi/06-99_otvety.md)
 
-- [Модуль 7. Другие объекты дерева]()
+- [Глава 7. Другие объекты дерева]()
   - [§ 7.1. Перечисления: список, закрытый навсегда](chapters/07_drugie-obekty/07-01_perechisleniya.md)
   - [§ 7.2. Планы счетов и регистры бухгалтерии](chapters/07_drugie-obekty/07-02_plan-schetov-i-registr-buhgalterii.md)
   - [§ 7.3. Регистры расчёта и планы видов расчёта](chapters/07_drugie-obekty/07-03_registry-rascheta.md)
@@ -84,7 +84,7 @@
   - [§ 7.8. Итог: остальные объекты дерева](chapters/07_drugie-obekty/07-08_itog.md)
   - [Ответы к части 7](chapters/07_drugie-obekty/07-99_otvety.md)
 
-- [Модуль 8. Как читать большое незнакомое дерево]()
+- [Глава 8. Как читать большое незнакомое дерево]()
   - [§ 8.1. Подсистемы: первый шаг перед любой навигацией](chapters/08_kak-chitat-bolshoe-derevo/08-01_podsistemy.md)
   - [§ 8.2. Приём «от отчёта»: читаем цепочку в обратном направлении](chapters/08_kak-chitat-bolshoe-derevo/08-02_ot-otcheta.md)
   - [§ 8.3. Приём «от документа»: читаем цепочку в прямом направлении](chapters/08_kak-chitat-bolshoe-derevo/08-03_ot-dokumenta.md)
@@ -95,7 +95,7 @@
   - [§ 8.8. Итог: чтение большого дерева](chapters/08_kak-chitat-bolshoe-derevo/08-08_itog.md)
   - [Ответы к части 8](chapters/08_kak-chitat-bolshoe-derevo/08-99_otvety.md)
 
-- [Модуль 9. Завершение: от чтения к созданию]()
+- [Глава 9. Завершение: от чтения к созданию]()
   - [§ 9.1. Контрольное чтение: незнакомое дерево вслух](chapters/09_zavershenie/09-01_kontrolnoe-chtenie.md)
   - [§ 9.2. Контрольное проектирование: «ВелоПрокат»](chapters/09_zavershenie/09-02_kontrolnoe-proektirovanie.md)
   - [§ 9.3. Куда идти дальше](chapters/09_zavershenie/09-03_kuda-idti-dalshe.md)
